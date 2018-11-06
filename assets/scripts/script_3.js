@@ -123,7 +123,7 @@ d3.tsv("assets/data/data.tsv", function(error, data) {
 		.attr("y", 9)
 		.attr("dy", ".35em")
 		.style("text-anchor", "start")
-		.text(function(d) { return d; } onmouseover=responsiveVoice.speak('speaking','US English Female'));
+		.text(function(d) { return d; });
 
 	// animation
 	d3.selectAll("#stack-form input").on("change", handleFormClick);
