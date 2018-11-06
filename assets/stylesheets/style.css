@@ -258,6 +258,7 @@ form {
 
 
     #chart {
+	  width: 100%
 	  max-width: 100%;
 	  overflow:auto;
     margin: 50px;
