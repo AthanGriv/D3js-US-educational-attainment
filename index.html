@@ -85,7 +85,7 @@
  */
 </script>
 <script>
-$('label,h1,h2,div.legend').mouseenter(function() { 
+$('label,h1,h2').mouseenter(function() { 
  	responsiveVoice.cancel(); 
 	responsiveVoice.speak($(this).text()); 
 });
