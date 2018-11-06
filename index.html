@@ -21,7 +21,7 @@
         </nav>
     </header>
 <body>
-    <h1 class="title">Educational Attainment in the United States</h1>
+    <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States','US English Female');">Educational Attainment in the United States</h1>
         
 	
 	<p><br></p>
@@ -84,11 +84,9 @@
  */
 </script>
 <script>
-$(document).ready(function(){
-	$('a').mouseenter(function() { 
-	  	responsiveVoice.cancel(); 
-	  	responsiveVoice.speak('speak'); 
-	});
+$('a').mouseenter(function() { 
+ 	responsiveVoice.cancel(); 
+	responsiveVoice.speak('speak'); 
 });
 </script>
 	<audio>
