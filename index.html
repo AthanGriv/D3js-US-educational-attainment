@@ -83,12 +83,14 @@
    Should be equal the the height of the header
  */
 </script>
-	<script>
+<script>
+$(document).ready(function(){
 	$('a').mouseenter(function() { 
-	  responsiveVoice.cancel(); 
-	  responsiveVoice.speak('speak'); 
+	  	responsiveVoice.cancel(); 
+	  	responsiveVoice.speak('speak'); 
 	});
-	</script>
+});
+</script>
 	<audio>
 	  <source src="assets/click.mp3"></source>
           <source src="assets/click.ogg"></source>
