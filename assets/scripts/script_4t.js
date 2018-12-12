@@ -12,6 +12,26 @@ nv.addGraph(function() {
   return chart;
 });
 
+nv.addGraph(function() {
+  var chart = nv.models.pieChart()
+      .x(function(d) { return d.label })
+      .y(function(d) { return d.value })
+      .showLabels(true)     
+      .labelThreshold(.05) 
+      .labelType("percent")
+      .donut(true)         
+      .donutRatio(0.35)     
+  .growOnHover(false)
+      ;
+
+    d3.select("#chart2 svg")
+        .datum(exampleData())
+        .transition().duration(350)
+        .call(chart);
+
+  return chart;
+});
+
 function exampleData() {
   return  [
       { 
