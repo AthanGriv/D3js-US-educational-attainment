@@ -26,11 +26,13 @@
 <body>
     <h1 class="title">Educational Attainment in the United States</h1>
         
-	
+    <div class="hide" id="nationwide">
 	<p><br></p>
     <h2 class="subtitle">Nation-Wide Education Level of Population in Schooling</h2>
 	
     <svg id="pie-chart" width=100% height=50%></svg><a name="regional"></a>
+    </div>
+    <div class="hide" id="regionlevel">
     <p><br><br><br></p>
     <h2 class="subtitle">Educational Attainment: Region-level Breakdown of University Students</h2>
 	
@@ -48,6 +50,8 @@
     </form>
 	<p></p>
     <div id="chart"></div>
+    </div>
+    <div class="hide" id="statelevel">
 	<a name="state"></a>
     <p><br><br></p>
     <h2 class="subtitle">Education Level of Population in Schooling: State-level Breakdown</h2>
@@ -62,6 +66,7 @@
     </form>
     <div>
         <svg id="stacked-bar-chart"></svg>
+    </div>
     </div>
 
     
@@ -91,6 +96,9 @@ $('label,h1,h2').mouseenter(function() {
  	responsiveVoice.cancel(); 
 	responsiveVoice.speak($(this).text()); 
 });
+</script>
+<script>
+	
 </script>
 	<audio>
 	  <source src="assets/click.mp3"></source>
