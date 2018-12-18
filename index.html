@@ -25,6 +25,17 @@
         </nav>
     </header>
 <body>
+	<script type="text/javascript">
+	$("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+</script>
     <h1 class="title">Educational Attainment in the United States</h1>
         
     <div class="hide" id="nationwide">
